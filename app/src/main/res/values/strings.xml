@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DearDiary</string>
+    <string name="start">Start</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upcoming_holidays">Upcoming holidays:</string>
+    <string name="close">Close</string>
+    <string name="dear_diary">Dear Diary...</string>
+    <string name="button_for_upcoming_holidays">Button for upcoming holidays</string>
+    <string name="button_to_add_an_entry">Button to add an entry</string>
+    <string name="add_entry">Add Entry</string>
+    <string name="enter_your_title_here">Enter your title here</string>
+    <string name="enter_your_entry_here">Enter your entry here</string>
+    <string name="button_to_cancel">Button to cancel</string>
+    <string name="button_to_save_entry">Button to save entry</string>
+</resources>

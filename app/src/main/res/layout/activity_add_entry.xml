@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/addHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_entry"
+        android:textColor="@color/dark_gray"
+        android:textSize="24sp"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_close_24"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/addHeading"
+        android:layout_marginEnd="6dp"
+        android:contentDescription="@string/button_to_cancel" />
+
+    <ImageView
+        android:id="@+id/btnSaveEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_check_24"
+        android:layout_toStartOf="@id/btnCancel"
+        android:layout_alignTop="@id/addHeading"
+        android:layout_marginEnd="15dp"
+        android:contentDescription="@string/button_to_save_entry" />
+
+    <EditText
+        android:id="@+id/titleEntry"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/enter_your_title_here"
+        android:padding="12dp"
+        android:textSize="20sp"
+        android:layout_below="@id/addHeading"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:maxLines="1"
+        android:autofillHints="title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/contentEntry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/enter_your_entry_here"
+        android:gravity="top"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:layout_below="@id/titleEntry"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:autofillHints="content"/>
+
+</RelativeLayout>
